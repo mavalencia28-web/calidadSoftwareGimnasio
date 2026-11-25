@@ -82,4 +82,23 @@ describe("Pruebas del módulo de suscripciones del gimnasio", () => {
         expect(() => calcularSuscripcion(precio))
             .toThrow("El precio debe ser un número válido.");
     });
+    
+    test("8. Debe aceptar datos de entrada válidos", () => {
+        // ARRANGE
+        const precio = 120000;
+        const numeroLista = 22;
+        // ACT
+        const resultado = validarEntrada(precio, numeroLista);
+        // ASSERT
+        expect(resultado).toBe(true);
+    });
+    
+    test("9. Debe rechazar un número de lista inválido", () => {
+        // ARRANGE
+        const precio = 120000;
+        const numeroLista = 0;
+        // ACT Y ASSERT
+        expect(() => validarEntrada(precio, numeroLista))
+            .toThrow("El número de lista debe ser un entero positivo.");
+    });
 });

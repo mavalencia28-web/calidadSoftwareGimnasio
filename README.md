@@ -97,6 +97,8 @@ Se desarrollaron siete pruebas unitarias utilizando la estructura AAA (Arrange, 
 | 5 -> Borde: Ingresar un precio igual a cero -> Rechazar la entrada |
 | 6 -> Borde: Ingresar un precio negativo -> Rechazar la entrada |
 | 7 -> Borde: Ingresar el precio como texto -> Rechazar la entrada |
+| 8 -> Normal: Aceptar datos de entrada validos ($120.000, 22) -> Recibe información correcta |
+| 9 -> Borde: Rechazar un número de lista igual a cero -> Rechazar la entrada |
 
 8. Resultados de las pruebas
 
