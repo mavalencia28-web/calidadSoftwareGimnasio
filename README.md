@@ -60,15 +60,21 @@ Ejemplos:
 ```text
 calidad-software-gimnasio/
 │
+├── evidencias/
+│   └── pruebasAprobadas.png
+│   └── pruebasCorregidas.png
+│   └── pruebasFallidas1.png
+│   └── pruebasFallidas2.png
+│
 ├── src/
 │   └── calculadora.js
 │
 ├── tests/
 │   └── calculadora.test.js
 │
+├── .gitignore
 ├── package.json
 ├── package-lock.json
-├── .gitignore
 └── README.md
 ```
 
